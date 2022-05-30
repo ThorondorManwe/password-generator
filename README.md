@@ -1,0 +1,1 @@
+This is a solo project for the Front End Path at scrimba.com
