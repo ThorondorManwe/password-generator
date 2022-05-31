@@ -21,6 +21,7 @@
                 <p>Never use an insecure password again.</p>
     
                 <button onclick="passwords()" id="passwordGenerator"></i>Generate passwords</button>
+                <p id="passwordCopiado"></p>
             </div>
 
 
@@ -29,13 +30,13 @@
                 <hr>
 
                 <div id="passwordInner">
-                    <button class="passwordGenerated" id="password1">···</button>
-                    <button class="passwordGenerated" id="password2">···</button>
-                    <button class="passwordGenerated" id="password3">···</button>
-                    <button class="passwordGenerated" id="password4">···</button>
+                    <button class="passwordGenerated" id="password1" onclick="copyPassword(event)">···</button>
+                    <button class="passwordGenerated" id="password2" onclick="copyPassword(event)">···</button>
+                    <button class="passwordGenerated" id="password3" onclick="copyPassword(event)">···</button>
+                    <button class="passwordGenerated" id="password4" onclick="copyPassword(event)">···</button>
                 </div>
 
-
+                
             </div>
 
         </div>

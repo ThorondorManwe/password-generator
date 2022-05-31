@@ -1,5 +1,5 @@
 // Bonus: ability to set the password length
-// Bonus: 1-click copy passwors to the clipboard
+// Bonus: 1-click copy passwors to the clipboard Done
 
 
 const chars = [
@@ -25,6 +25,7 @@ let password1 = document.getElementById("password1");
 let password2 = document.getElementById("password2");
 let password3 = document.getElementById("password3");
 let password4 = document.getElementById("password4");
+let passwordAviso = document.getElementById("passwordCopiado");
 
 function generatePassword() {
     let password = "";
@@ -56,3 +57,21 @@ function passwords() {
 /* for (let i = 0; i < 5; i++) {
     password1 = textContent = "prueba: " + i
 } */
+function copyPassword(e) {
+    if(e.target.textContent === "···") {
+        console.log("Esto no rules");
+        passwordAviso.textContent = "Click on 'Generate passwords' first";
+        setTimeout(function(){
+            //Code that will run after 5000 milliseconds
+            passwordAviso.textContent = "";
+        }, 5000);
+    } else {
+        passwordAviso.textContent = "Password copied to clipboard";
+        setTimeout(function(){
+            //Code that will run after 5000 milliseconds
+            passwordAviso.textContent = "";
+        }, 5000);
+        console.log(e.target.textContent);
+        navigator.clipboard.writeText(e.target.textContent);
+    }
+}
