@@ -4,7 +4,9 @@
     <head>
         <title>Password Generator</title>
         <meta charset="UTF-8" lang="en">
-        <script src="https://kit.fontawesome.com/76d65dc6ab.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Karla:wght@400;500;700;800&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="index.css">
         <script src="index.js" defer></script>
     </head>
@@ -13,16 +15,20 @@
 
         <div id="main">
 
-            <h1>Generate a random password</h1>
-            <p>Never use an insecure password again.</p>
 
-            <button onclick="passwords()"><i class="fa-solid fa-bolt"></i>Generate passwords</button>
+            <div id="firstBox">
+                <h1 id="title">Generate a <br><span id="random">random password</span></h1>
+                <p>Never use an insecure password again.</p>
+    
+                <button onclick="passwords()" id="passwordGenerator"></i>Generate passwords</button>
+            </div>
+
 
             <div id="passwords">
 
                 <hr>
 
-                <div>
+                <div id="passwordInner">
                     <button class="passwordGenerated" id="password1">···</button>
                     <button class="passwordGenerated" id="password2">···</button>
                     <button class="passwordGenerated" id="password3">···</button>

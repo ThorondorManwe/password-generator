@@ -4,7 +4,7 @@
 
 const chars = [
     "a", "b", "c", "d", "e", "f", 
-    "g", "h", "i", "j", "k", "l", 
+    "g", "h", "i", "j", "k", "l",
     "m", "n", "o", "p", "q", "r", 
     "s", "t", "u", "v", "w", "x", 
     "y", "z", "A", "B", "C", "D", 
@@ -37,15 +37,19 @@ function generatePassword() {
 function passwords() {
     let passwordGenerado1 = generatePassword();
     password1.textContent = passwordGenerado1;
+    password1.setAttribute('class', "passwordGenerated verde");
 
     let passwordGenerado2 = generatePassword();
     password2.textContent = passwordGenerado2;
+    password2.setAttribute('class', "passwordGenerated verde");
 
     let passwordGenerado3 = generatePassword();
     password3.textContent = passwordGenerado3;
+    password3.setAttribute('class', "passwordGenerated verde");
 
     let passwordGenerado4 = generatePassword();
     password4.textContent = passwordGenerado4;
+    password4.setAttribute('class', "passwordGenerated verde");
     
 }
 
